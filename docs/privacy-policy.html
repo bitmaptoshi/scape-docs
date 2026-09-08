@@ -32,14 +32,14 @@ footer{background:#0a0a0a;color:#888;text-align:center;padding:24px;font-size:.8
 <div class="container">
 <div class="highlight"><p><strong>Summary:</strong> Scape is an AI-powered home remodeling app. Your room photos and generated renders are stored locally on your device, not on our servers. We collect only minimal account data. We do not sell your personal data. You can delete your account at any time from within the app.</p></div>
 <h2>1. Who We Are</h2>
-<p>Scape is developed and operated by David Anderson, an individual software developer. Scape is an AI-powered interior design and home remodeling application available on Android and iOS.</p>
+<p>Scape is developed and operated by Alysia Anderson and David Anderson, operating as AndersonAI.io. Scape is an AI-powered interior design and home remodeling application available on Android and iOS.</p>
 <p><strong>Contact:</strong> <a href="mailto:support.scapeapp@gmail.com">support.scapeapp@gmail.com</a></p>
 <h2>2. How You Access Scape</h2>
 <h3>2.1 Guest / Anonymous Access</h3>
 <p>You can use Scape immediately without creating an account. Guest users receive an automatic anonymous Firebase session. No email address or personal information is required.</p>
 <ul>
 <li>Your design history is stored locally on your device only</li>
-<li>If your session ends without signing in, your history remains on your device until you clear it</li>
+<li>If your session ends without signing in, your history remains on your device until it expires (after 30 days), you uninstall the app, or you clear the app's storage</li>
 <li>If you later sign in, your credits and account are linked to your permanent profile</li>
 </ul>
 <h3>2.2 Google Sign-In</h3>
@@ -69,12 +69,13 @@ footer{background:#0a0a0a;color:#888;text-align:center;padding:24px;font-size:.8
 <li>Immediately discarded after processing — not stored on our servers</li>
 </ul>
 <h3>3.3 Generated Renders and Design History</h3>
-<p>Your AI-generated renders are stored locally on your device using AsyncStorage:</p>
+<p>Your AI-generated renders are stored locally on your device:</p>
 <ul>
 <li>Renders are private to your device</li>
 <li>You can view and download renders offline</li>
-<li>History is capped at your last 50 renders</li>
-<li>Persists until you tap Clear History or uninstall the app</li>
+<li>History keeps your 30 most recent renders</li>
+<li>Renders older than 30 days are automatically removed from history</li>
+<li>All local history is removed if you uninstall the app or clear the app's storage in your device settings</li>
 <li>Renders are NOT uploaded to our servers</li>
 </ul>
 <h3>3.4 Purchase Information</h3>
@@ -102,7 +103,7 @@ footer{background:#0a0a0a;color:#888;text-align:center;padding:24px;font-size:.8
 </ul>
 <h2>6. Local Device Storage</h2>
 <ul>
-<li>Your last 50 AI-generated renders via AsyncStorage for offline access</li>
+<li>Your 30 most recent AI-generated renders (renders older than 30 days are removed automatically), stored on your device for offline access</li>
 <li>Active room photos in device RAM during your session</li>
 <li>Anonymous session data stored locally until you sign in or clear app data</li>
 </ul>
@@ -111,7 +112,7 @@ footer{background:#0a0a0a;color:#888;text-align:center;padding:24px;font-size:.8
 <h2>8. Data Retention</h2>
 <ul>
 <li><strong>Account metadata:</strong> Retained until you delete your account</li>
-<li><strong>Design renders:</strong> Capped at 50, stored on device until cleared</li>
+<li><strong>Design renders:</strong> The 30 most recent are kept on your device; older entries and anything past 30 days are removed automatically, and all are removed if you uninstall the app</li>
 <li><strong>Uploaded photos:</strong> Not stored — processed and immediately discarded</li>
 <li><strong>Anonymous sessions:</strong> Stored locally until session ends or app is cleared</li>
 <li><strong>Purchase records:</strong> Retained 7 years for legal compliance</li>
@@ -120,7 +121,7 @@ footer{background:#0a0a0a;color:#888;text-align:center;padding:24px;font-size:.8
 <ul>
 <li><strong>Access</strong> your data — email <a href="mailto:support.scapeapp@gmail.com">support.scapeapp@gmail.com</a></li>
 <li><strong>Delete</strong> your account — Settings then Delete Account in the app</li>
-<li><strong>Clear</strong> local history — Settings then Clear History in the app</li>
+<li><strong>Clear</strong> local history — uninstall the app, or clear the app's storage in your device settings, to remove all locally stored renders</li>
 <li><strong>Export</strong> your data — email <a href="mailto:support.scapeapp@gmail.com">support.scapeapp@gmail.com</a></li>
 </ul>
 <p>If you are in the EEA or UK, you have additional rights under GDPR.</p>
@@ -137,7 +138,7 @@ footer{background:#0a0a0a;color:#888;text-align:center;padding:24px;font-size:.8
 </ul>
 </div>
 <footer>
-<p>2026 Scape by David Anderson. All rights reserved.</p>
+<p>2026 Scape by Alysia Anderson and David Anderson. All rights reserved.</p>
 <p style="margin-top:8px"><a href="https://bitmaptoshi.github.io/scape-docs" style="color:#888">Home</a> | <a href="https://bitmaptoshi.github.io/scape-docs/docs/terms-of-service.html" style="color:#888">Terms of Service</a> | <a href="https://bitmaptoshi.github.io/scape-docs/docs/support.html" style="color:#888">Support</a></p>
 </footer>
 </body>
