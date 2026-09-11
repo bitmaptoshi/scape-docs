@@ -27,7 +27,7 @@ footer{background:#0a0a0a;color:#888;text-align:center;padding:24px;font-size:.8
 <body>
 <header>
 <h1>Scape — Privacy Policy</h1>
-<p>Last updated: August 4, 2026 | Effective: August 4, 2026</p>
+<p>Last updated: September 11, 2026 | Effective: August 4, 2026</p>
 </header>
 <div class="container">
 <div class="highlight"><p><strong>Summary:</strong> Scape is an AI-powered home remodeling app. Your room photos and generated renders are stored locally on your device, not on our servers. We collect only minimal account data. We do not sell your personal data. You can delete your account at any time from within the app.</p></div>
@@ -52,14 +52,15 @@ footer{background:#0a0a0a;color:#888;text-align:center;padding:24px;font-size:.8
 <p>If you create an account, we store in Firebase Firestore:</p>
 <ul>
 <li>Unique user identifier (Firebase Auth UID)</li>
-<li>Email address</li>
-<li>Display name (if provided via Google Sign-In)</li>
 <li>Credit balance</li>
 <li>Total render count</li>
 <li>Account creation timestamp</li>
 <li>Subscription tier</li>
+<li>Sign-in provider (e.g. Google, or anonymous guest)</li>
+<li>A flag indicating whether your account was linked to a device that had already claimed a free trial (free-trial abuse prevention only — see below)</li>
 </ul>
-<p><strong>We do NOT store your room photos or generated renders in our cloud database.</strong></p>
+<p><strong>We do NOT store your room photos or generated renders in our cloud database, and we do NOT store your email address or display name.</strong></p>
+<p><strong>Free-trial device check:</strong> When you claim your free trial credits on an Android device, we store that device's Android ID in a separate record, linked to your account, solely to detect and prevent multiple free-trial claims from the same device. This check does not apply on iOS.</p>
 <h3>3.2 Photos and Images You Upload</h3>
 <p>When you generate a remodel render, your uploaded photo is:</p>
 <ul>
