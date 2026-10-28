@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Privacy Policy — Scape</title>
+<title>Privacy Policy — Scape AI Home Renovation</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f9f9f9;color:#1a1a1a;line-height:1.7}
@@ -26,120 +26,137 @@ footer{background:#0a0a0a;color:#888;text-align:center;padding:24px;font-size:.8
 </head>
 <body>
 <header>
-<h1>Scape — Privacy Policy</h1>
-<p>Last updated: September 11, 2026 | Effective: August 4, 2026</p>
+<h1>Scape AI Home Renovation — Privacy Policy</h1>
+<p>Last updated: 28 October 2026 | Effective: 28 October 2026</p>
 </header>
 <div class="container">
-<div class="highlight"><p><strong>Summary:</strong> Scape is an AI-powered home remodeling app. Your room photos and generated renders are stored locally on your device, not on our servers. We collect only minimal account data. We do not sell your personal data. You can delete your account at any time from within the app.</p></div>
+<div class="highlight"><p><strong>Summary:</strong> Scape AI Home Renovation (“Scape”) creates AI-generated visualizations of remodel ideas from photos of your rooms. To make a design, the photos and the description you write are sent to our server and to Google’s Gemini API for processing. We do not keep your photos, your descriptions or your designs on our servers: your design history is stored only on your device. Your credits and purchases belong to your account on our server. We do not sell your personal data. You can delete your account at any time from within the app.</p></div>
+
 <h2>1. Who We Are</h2>
-<p>Scape is developed and operated by Alysia Anderson and David Anderson, operating as AndersonAI.io. Scape is an AI-powered interior design and home remodeling application available on Android and iOS.</p>
+<p>Scape AI Home Renovation is provided by Alysia Anderson, an individual (“we”, “us”). It is an Android app that turns photos of your space and a written description into AI-generated visualizations of possible remodels, for personal, non-commercial use.</p>
 <p><strong>Contact:</strong> <a href="mailto:support.scapeapp@gmail.com">support.scapeapp@gmail.com</a></p>
-<h2>2. How You Access Scape</h2>
-<h3>2.1 Guest / Anonymous Access</h3>
-<p>You can use Scape immediately without creating an account. Guest users receive an automatic anonymous Firebase session. No email address or personal information is required.</p>
-<ul>
-<li>Your design history is stored locally on your device only</li>
-<li>If your session ends without signing in, your history remains on your device until it expires (after 30 days), you uninstall the app, or you clear the app's storage</li>
-<li>If you later sign in, your credits and account are linked to your permanent profile</li>
-</ul>
+
+<h2>2. Your Account</h2>
+<h3>2.1 Guest Access</h3>
+<p>When you first open the app, it creates an anonymous Firebase account for you automatically. No email address or other personal information is required. As a guest you can take or choose photos and prepare a design, but you need to sign in to receive credits or buy them, and credits are needed to create a design.</p>
 <h3>2.2 Google Sign-In</h3>
-<p>You may sign in using your Google account via Firebase Authentication. We receive your email address, display name, and profile photo as provided by Google.</p>
-<h3>2.3 Email and Password</h3>
-<p>You may create an account using your email address and a password via Firebase Authentication.</p>
-<h2>3. Information We Collect</h2>
-<div class="privacy-win"><p>Your room photos and AI-generated renders are stored locally on your device. They are never uploaded to or stored on our servers or cloud database.</p></div>
-<h3>3.1 Account Information</h3>
-<p>If you create an account, we store in Firebase Firestore:</p>
+<p>You can sign in with your Google account. When you do, your guest account is upgraded to a Google-linked account. Firebase Authentication (a Google service we use) receives your email address, display name and profile photo from Google and keeps them in your sign-in record. We use them only to sign you in and to identify your account if you contact us. We do not copy them into our database. Google Sign-In is currently the only sign-in method.</p>
+<h3>2.3 What Belongs to Your Account, and What Stays on Your Device</h3>
 <ul>
-<li>Unique user identifier (Firebase Auth UID)</li>
-<li>Credit balance</li>
-<li>Total render count</li>
-<li>Account creation timestamp</li>
-<li>Subscription tier</li>
-<li>Sign-in provider (e.g. Google, or anonymous guest)</li>
-<li>A flag indicating whether your account was linked to a device that had already claimed a free trial (free-trial abuse prevention only — see below)</li>
+<li><strong>On our server, tied to your account:</strong> your credit balance, your purchases and your render count. These follow you if you sign in on another device.</li>
+<li><strong>On your device only:</strong> your design history (your designs and the room photos they were made from) and your 20 most recent prompts. These are not uploaded to our servers, do not follow you to another device and are not restored if you reinstall the app.</li>
 </ul>
-<p><strong>We do NOT store your room photos or generated renders in our cloud database, and we do NOT store your email address or display name.</strong></p>
-<p><strong>Free-trial device check:</strong> When you claim your free trial credits on an Android device, we store that device's Android ID in a separate record, linked to your account, solely to detect and prevent multiple free-trial claims from the same device. This check does not apply on iOS.</p>
-<h3>3.2 Photos and Images You Upload</h3>
-<p>When you generate a remodel render, your uploaded photo is:</p>
+
+<h2>3. Your Photos and Descriptions</h2>
+<h3>3.1 Photo Safety Check</h3>
+<p>When you add a photo of your room, a reduced copy is sent over HTTPS to our server, which passes it to Google’s Gemini API to check that it is suitable (for example, that it does not contain explicit content) and whether it shows people. The result is returned to the app. The photo is not stored by us.</p>
+<h3>3.2 Creating a Design</h3>
+<p>When you tap to create a design, the app sends to our server over HTTPS:</p>
 <ul>
-<li>Held temporarily in your device RAM during your session</li>
-<li>Transmitted securely to our server over HTTPS for AI processing</li>
-<li>Processed in real time by Google Gemini AI</li>
-<li>Immediately discarded after processing — not stored on our servers</li>
+<li>your room photo(s), compressed;</li>
+<li>any material or product photos you added in Design Details;</li>
+<li>the description (prompt) you wrote.</li>
 </ul>
-<h3>3.3 Generated Renders and Design History</h3>
-<p>Your AI-generated renders are stored locally on your device:</p>
+<p>Our server sends these to Google’s Gemini API, together with our own instructions, and returns the AI-generated design to your device. Our server handles your photos and description in memory only while the request is being processed. We do not save them to a database, to file storage or to our logs.</p>
+<p><strong>Google’s processing:</strong> Google processes this content as our service provider under the <a href="https://ai.google.dev/gemini-api/terms">Gemini API Additional Terms of Service</a>. We use the paid Gemini API service; under those terms Google does not use this content to improve its products, but may keep it for a limited period to detect abuse and comply with law. See Google’s terms for details.</p>
+<h3>3.3 Records We Keep About Each Design</h3>
+<p>For each design request, our server keeps a short technical record so we can manage credits, refund failed renders and detect abuse: your account ID, the time, the outcome (success or the type of error), how long it took, the number of photos, the quality setting and your credit balance afterward. <strong>It does not contain your photos, your description or the design.</strong> These records are deleted automatically after 90 days, or sooner when you delete your account. A short-lived record that prevents the same request from being charged twice is deleted automatically after 24 hours.</p>
+<h3>3.4 Server Logs</h3>
+<p>Our server logs contain technical information such as your account ID, the requested address, the time, error messages and the length of your description (not its text). Logs are kept for 30 days.</p>
+
+<h2>4. Your Design History (On Your Device Only)</h2>
+<div class="privacy-win"><p>Your designs, and copies of the room photos they were made from, are saved only on your device. They are never uploaded to our servers or our database.</p></div>
 <ul>
-<li>Renders are private to your device</li>
-<li>You can view and download renders offline</li>
-<li>History keeps your 30 most recent renders</li>
-<li>Renders older than 30 days are automatically removed from history</li>
-<li>All local history is removed if you uninstall the app or clear the app's storage in your device settings</li>
-<li>Renders are NOT uploaded to our servers</li>
+<li>The app keeps your 30 most recent designs; anything older than 30 days is removed automatically.</li>
+<li>You can delete all of it at any time: Settings, then On this device, then Clear All Render History.</li>
+<li>It is also deleted when you delete your account in the app, when you uninstall the app or when you clear the app’s storage in your device settings.</li>
+<li>Designs you save or share leave the app: copies you save to your photo gallery or share through other apps are controlled by you and those apps.</li>
+<li>The app also keeps your 20 most recent prompts on your device, so you can reuse them. The list itself is never uploaded; a prompt is sent only as part of a design you request (section 3). You can delete any prompt from the list. The list is also deleted when you clear your design history, sign out, delete your account, uninstall the app or clear the app’s storage.</li>
 </ul>
-<h3>3.4 Purchase Information</h3>
-<p>Purchases are processed natively by Google Play Billing (Android) or Apple App Store (iOS). We use RevenueCat to manage and validate purchases. We do not store your payment card details.</p>
-<h3>3.5 Device and Technical Information</h3>
-<p>Firebase and RevenueCat may automatically collect device identifiers, OS version, app version, and crash data.</p>
-<h2>4. How We Use Your Information</h2>
+
+<h2>5. Reporting AI-Generated Content</h2>
+<p>You can report any design you find offensive, inappropriate or misleading using the flag button on the design screen. A report contains your account ID, the reason you chose, the time and a reference to the design’s location on your device. <strong>The design image itself is not sent.</strong> We use reports to review and improve the safety of the service. Reports are kept for moderation; when you delete your account, your account ID and the device reference are removed from your reports.</p>
+
+<h2>6. Credits and Purchases</h2>
 <ul>
-<li>To provide and operate the Scape service</li>
-<li>To process your uploaded photos and generate AI renders</li>
-<li>To manage your credit balance and purchase history</li>
-<li>To authenticate your identity and secure your account</li>
-<li>To enable offline access to your design history</li>
-<li>To respond to support requests</li>
-<li>To improve app performance and fix bugs</li>
-<li>To comply with legal obligations</li>
+<li>Credits are stored on our server with your account: your balance, render count, account creation date and sign-in method.</li>
+<li>Purchases are made through Google Play Billing. We never receive your payment card details.</li>
+<li>We use RevenueCat to process and verify purchases. RevenueCat receives your account ID and purchase details from Google Play. We keep a record of each purchase notification (account ID, product, transaction ID, time and outcome) to apply credits exactly once and to handle refunds. These records are kept for 7 years for tax and accounting purposes. When you delete your account, your account ID is removed from them, so they are no longer linked to you.</li>
+<li>RevenueCat keeps its own records of your purchases under <a href="https://www.revenuecat.com/privacy">RevenueCat’s privacy policy</a>.</li>
 </ul>
-<h2>5. Third-Party Services</h2>
+
+<h2>7. Free Credits and Device Information</h2>
+<p>New accounts that sign in with Google can claim free credits once. To limit abuse, earlier versions of our service stored your Android device ID linked to your account when you claimed free credits. Any such record is deleted when you delete your account.</p>
+
+<h2>8. Crash Reports and Security Checks</h2>
 <ul>
-<li><strong>Google Firebase</strong> — Authentication and database. <a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a></li>
-<li><strong>Google Gemini API</strong> — Real-time AI processing. Photos processed and immediately discarded. <a href="https://ai.google.dev/gemini-api/terms">Gemini API Terms</a></li>
-<li><strong>RevenueCat</strong> — Purchase management. <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a></li>
-<li><strong>Google Play Billing</strong> — Android payments. <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-<li><strong>Apple App Store</strong> — iOS payments. <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></li>
+<li><strong>Crash reporting:</strong> we use Firebase Crashlytics. When the app crashes or hits certain errors, it sends a report containing technical details (device model, Android version, app version, the error and the events leading up to it) and your account ID. Crash reports do not include your photos, descriptions or designs.</li>
+<li><strong>App integrity:</strong> we use Firebase App Check with Google Play Integrity to confirm that requests come from a genuine copy of the app on a genuine device.</li>
 </ul>
-<h2>6. Local Device Storage</h2>
+
+<h2>9. How We Use Your Information</h2>
 <ul>
-<li>Your 30 most recent AI-generated renders (renders older than 30 days are removed automatically), stored on your device for offline access</li>
-<li>Active room photos in device RAM during your session</li>
-<li>Anonymous session data stored locally until you sign in or clear app data</li>
+<li>To create your AI-generated designs and check uploaded photos for safety</li>
+<li>To manage your credits, purchases and refunds</li>
+<li>To sign you in and secure your account</li>
+<li>To prevent fraud and abuse, including misuse of free credits</li>
+<li>To review reports of AI-generated content</li>
+<li>To fix crashes and improve reliability</li>
+<li>To respond to support requests and comply with legal obligations</li>
 </ul>
-<h2>7. Data Storage and Security</h2>
-<p>Account metadata is stored securely using Google Firebase. Our server uses HTTPS encryption, Firebase App Check, server-side authentication, and Google Cloud Secret Manager.</p>
-<h2>8. Data Retention</h2>
+<p>We do not use your photos or descriptions for advertising, and we do not sell your personal data.</p>
+
+<h2>10. Service Providers</h2>
 <ul>
-<li><strong>Account metadata:</strong> Retained until you delete your account</li>
-<li><strong>Design renders:</strong> The 30 most recent are kept on your device; older entries and anything past 30 days are removed automatically, and all are removed if you uninstall the app</li>
-<li><strong>Uploaded photos:</strong> Not stored — processed and immediately discarded</li>
-<li><strong>Anonymous sessions:</strong> Stored locally until session ends or app is cleared</li>
-<li><strong>Purchase records:</strong> Retained 7 years for legal compliance</li>
+<li><strong>Google Firebase</strong> (Authentication, Firestore database, Crashlytics, App Check) — <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a></li>
+<li><strong>Google Cloud Run</strong> — hosts our server (United States)</li>
+<li><strong>Google Gemini API</strong> — AI processing of photos and descriptions — <a href="https://ai.google.dev/gemini-api/terms">Gemini API Terms</a></li>
+<li><strong>RevenueCat</strong> — purchase processing — <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a></li>
+<li><strong>Google Play</strong> — app distribution, payments, Play Integrity — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
 </ul>
-<h2>9. Your Rights</h2>
+<p>Our server and database are located in the United States. If you use the app from outside the United States, your information is transferred to and processed in the United States.</p>
+
+<h2>11. Data Retention</h2>
 <ul>
-<li><strong>Access</strong> your data — email <a href="mailto:support.scapeapp@gmail.com">support.scapeapp@gmail.com</a></li>
-<li><strong>Delete</strong> your account — Settings then Delete Account in the app</li>
-<li><strong>Clear</strong> local history — uninstall the app, or clear the app's storage in your device settings, to remove all locally stored renders</li>
-<li><strong>Export</strong> your data — email <a href="mailto:support.scapeapp@gmail.com">support.scapeapp@gmail.com</a></li>
+<li><strong>Room photos and descriptions:</strong> not stored by us; processed only while your request runs (see section 3.2 for Google’s processing)</li>
+<li><strong>Design history:</strong> on your device only; 30 most recent, up to 30 days, until you clear it, delete your account or uninstall the app</li>
+<li><strong>Recent prompts:</strong> on your device only; 20 most recent, no time limit, until you delete them, clear your design history, sign out, delete your account or uninstall the app</li>
+<li><strong>Account and credits:</strong> until you delete your account</li>
+<li><strong>Design request records:</strong> 90 days, or until you delete your account</li>
+<li><strong>Server logs:</strong> 30 days</li>
+<li><strong>Content reports:</strong> kept for moderation; unlinked from you when you delete your account</li>
+<li><strong>Purchase records:</strong> 7 years, for tax and accounting purposes; unlinked from your account when you delete it. RevenueCat keeps its own records under <a href="https://www.revenuecat.com/privacy">RevenueCat’s privacy policy</a></li>
+<li><strong>Crash reports:</strong> kept by Firebase Crashlytics for up to 90 days</li>
 </ul>
-<p>If you are in the EEA or UK, you have additional rights under GDPR.</p>
-<h2>10. Children's Privacy</h2>
-<p>Scape is not directed at children under 13. Contact <a href="mailto:support.scapeapp@gmail.com">support.scapeapp@gmail.com</a> if you believe a child has provided us information.</p>
-<h2>11. California Privacy Rights</h2>
-<p>We do not sell personal information. Contact <a href="mailto:support.scapeapp@gmail.com">support.scapeapp@gmail.com</a> to exercise your CCPA rights.</p>
-<h2>12. Changes to This Policy</h2>
-<p>We may update this policy from time to time. Continued use of Scape constitutes acceptance.</p>
-<h2>13. Contact Us</h2>
+
+<h2>12. Deleting Your Account</h2>
+<p>In the app, go to Settings, then Delete Account &amp; Data. This permanently deletes your account, your sign-in record (including the email address, name and photo from Google), your credit balance and your design request records, and clears the design history on that device. <strong>Any remaining credits are lost and cannot be restored.</strong> Purchase records are kept for 7 years, unlinked from your account. RevenueCat keeps its own records under its privacy policy. See <a href="https://bitmaptoshi.github.io/scape-docs/docs/account-deletion.html">Delete Your Account</a> for details.</p>
+
+<h2>13. Your Rights</h2>
+<ul>
+<li><strong>Access or export</strong> your data — email <a href="mailto:support.scapeapp@gmail.com">support.scapeapp@gmail.com</a></li>
+<li><strong>Delete</strong> your account — Settings, then Delete Account &amp; Data, in the app</li>
+<li><strong>Clear</strong> your design history — Settings, then On this device, then Clear All Render History</li>
+</ul>
+<p>If you are in the EEA or UK, you also have the right to correct your data, to restrict or object to its processing and to complain to your local data protection authority. We process your data to provide the service you asked for (contract), to prevent fraud and keep the service secure (legitimate interests) and to meet legal obligations.</p>
+
+<h2>14. Children’s Privacy</h2>
+<p>Scape AI Home Renovation is not directed at children under 13. Contact <a href="mailto:support.scapeapp@gmail.com">support.scapeapp@gmail.com</a> if you believe a child has provided us information.</p>
+
+<h2>15. California Privacy Rights</h2>
+<p>We do not sell or share personal information for cross-context behavioral advertising. Contact <a href="mailto:support.scapeapp@gmail.com">support.scapeapp@gmail.com</a> to exercise your CCPA rights.</p>
+
+<h2>16. Changes to This Policy</h2>
+<p>We may update this policy from time to time. We will change the “Last updated” date above and, for significant changes, tell you in the app.</p>
+
+<h2>17. Contact Us</h2>
 <ul>
 <li><strong>Email:</strong> <a href="mailto:support.scapeapp@gmail.com">support.scapeapp@gmail.com</a></li>
 <li><strong>Support:</strong> <a href="https://bitmaptoshi.github.io/scape-docs/docs/support.html">Support Page</a></li>
 </ul>
 </div>
 <footer>
-<p>2026 Scape by Alysia Anderson and David Anderson. All rights reserved.</p>
+<p>2026 Scape AI Home Renovation by Alysia Anderson. All rights reserved.</p>
 <p style="margin-top:8px"><a href="https://bitmaptoshi.github.io/scape-docs" style="color:#888">Home</a> | <a href="https://bitmaptoshi.github.io/scape-docs/docs/terms-of-service.html" style="color:#888">Terms of Service</a> | <a href="https://bitmaptoshi.github.io/scape-docs/docs/support.html" style="color:#888">Support</a></p>
 </footer>
 </body>
